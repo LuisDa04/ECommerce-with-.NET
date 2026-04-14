@@ -4,10 +4,10 @@ namespace ProyectoTestNET.Entities
     {
         public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public decimal TotalAmount { get; set; }
 
         public User? User { get; set; }
-        public ICollection<OrderItem> OrderItem { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
     }
 }
